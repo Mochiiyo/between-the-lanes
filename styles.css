@@ -127,11 +127,11 @@ img { display: block; width: 100%; }
 .drawing-media, .plan-media, .section-media { position: relative; background: #f7f6f2; }
 .drawing-feature .drawing-media { aspect-ratio: 16 / 10; }
 .drawing-feature .drawing-media img { height: 100%; object-fit: contain; }
-.drawing-caption { display: grid; grid-template-columns: 42px 1fr auto; gap: 12px; align-items: center; min-height: 54px; border-top: 1px solid rgba(240,234,226,.42); }
-.drawing-caption span { font-size: 8px; color: #e4aaa2; }
+.drawing-caption { display: grid; grid-template-columns: 56px 1fr auto; gap: 16px; align-items: center; min-height: 72px; border-top: 1px solid rgba(240,234,226,.42); }
+.drawing-caption span { font-size: 11px; color: #e4aaa2; }
 .drawing-caption h3, .drawing-caption p { margin: 0; }
-.drawing-caption h3 { font: 600 10px/1.2 var(--display); letter-spacing: .12em; }
-.drawing-caption p { font-size: 8px; letter-spacing: .13em; color: rgba(240,234,226,.58); text-align: right; }
+.drawing-caption h3 { font: 600 15px/1.25 var(--display); letter-spacing: .09em; }
+.drawing-caption p { font-size: 11px; letter-spacing: .1em; color: rgba(240,234,226,.72); text-align: right; }
 .drawing-chapter { display: grid; grid-template-columns: 1fr 3fr; gap: 4vw; margin: 150px 0 55px; padding-top: 22px; border-top: 1px solid rgba(240,234,226,.42); align-items: baseline; }
 .drawing-chapter span { font: 600 8px/1 var(--display); letter-spacing: .16em; color: #e4aaa2; }
 .drawing-chapter h3 { margin: 0; font: 500 clamp(27px, 3.4vw, 52px)/1.05 var(--display); letter-spacing: -.035em; }
@@ -143,6 +143,7 @@ img { display: block; width: 100%; }
 .section-drawings { display: grid; gap: 70px; }
 .section-media { aspect-ratio: 4 / 1; }
 .section-media img { position: absolute; top: 50%; left: 0; width: 100%; height: auto; transform: translateY(-50%); }
+.section-drawing:first-child .section-media img { transform: translateY(-41%); }
 .section-media.focus { aspect-ratio: 16 / 6; }
 .section-media.focus img { left: 49%; width: auto; max-width: none; height: 175%; transform: translate(-49%, -47%); }
 .section-focus { margin: 45px 7vw 0; }
@@ -244,6 +245,7 @@ footer p:last-child { text-align: right; }
   .section-drawings { gap: 55px; }
   .section-media { aspect-ratio: 2 / 1; }
   .section-media img { left: 50%; width: auto; max-width: none; height: 100%; transform: translate(-50%, -50%); }
+  .section-drawing:first-child .section-media img { transform: translate(-50%, -43%); }
   .section-media.focus { aspect-ratio: 2 / 1; }
   .section-media.focus img { left: 49%; height: 170%; transform: translate(-49%, -47%); }
   .section-focus { margin-inline: 0; }
