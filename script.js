@@ -7,7 +7,18 @@ const languageButton = document.querySelector('.language');
 const lightbox = document.querySelector('.lightbox');
 const lightboxImage = lightbox.querySelector('img');
 const lightboxCaption = lightbox.querySelector('figcaption');
-let language = 'zh';
+let language = 'en';
+
+function applyLanguage() {
+  root.lang = language === 'zh' ? 'zh-CN' : 'en';
+  document.querySelectorAll('[data-zh][data-en]').forEach((element) => {
+    element.textContent = element.dataset[language];
+  });
+  languageButton.textContent = language === 'zh' ? 'EN' : '中';
+  languageButton.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换为中文');
+}
+
+applyLanguage();
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -37,12 +48,7 @@ updateScrollState();
 
 languageButton.addEventListener('click', () => {
   language = language === 'zh' ? 'en' : 'zh';
-  root.lang = language === 'zh' ? 'zh-CN' : 'en';
-  document.querySelectorAll('[data-zh][data-en]').forEach((element) => {
-    element.textContent = element.dataset[language];
-  });
-  languageButton.textContent = language === 'zh' ? 'EN' : '中';
-  languageButton.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换为中文');
+  applyLanguage();
 });
 
 document.querySelectorAll('.image-open').forEach((button) => {
