@@ -6,8 +6,8 @@
   <meta name="description" content="街巷之间——乡村振兴建筑设计竞赛项目展示">
   <meta name="theme-color" content="#171512">
   <title>街巷之间｜Between the Lanes</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="script.js?v=2" defer></script>
 </head>
 <body>
   <div class="progress" aria-hidden="true"><span></span></div>
@@ -164,13 +164,59 @@
     <section class="drawings" id="drawings">
       <div class="section-tag light reveal"><span>04</span><p data-zh="设计图纸" data-en="Design drawings">设计图纸</p></div>
       <div class="drawings-head reveal">
-        <h2 data-zh="下一步：从空间印象进入设计逻辑。" data-en="Next: from spatial impressions to design logic.">下一步：从空间印象进入设计逻辑。</h2>
-        <p data-zh="这里已预留总平面、平面、立面与剖面图位置。添加图纸后，项目叙事可以在同一页面继续展开。" data-en="Space is reserved for the site plan, floor plans, elevations and sections. The project narrative can continue here as drawings are added.">这里已预留总平面、平面、立面与剖面图位置。添加图纸后，项目叙事可以在同一页面继续展开。</p>
+        <h2 data-zh="从空间印象，进入设计逻辑。" data-en="From spatial impressions to design logic.">从空间印象，进入设计逻辑。</h2>
+        <p data-zh="院落、廊道与公共功能被嵌入既有街巷肌理。爆炸轴测、平面与剖立面共同说明新旧结构如何交叠。点击任意图纸可查看完整大图。" data-en="Courtyards, passages and public programs are inserted into the inherited fabric. The exploded axonometric, plans and sections reveal how old and new structures overlap. Select any drawing to view it in full.">院落、廊道与公共功能被嵌入既有街巷肌理。爆炸轴测、平面与剖立面共同说明新旧结构如何交叠。点击任意图纸可查看完整大图。</p>
       </div>
-      <div class="drawing-slots">
-        <div class="drawing-slot reveal"><span>01</span><b data-zh="总平面图" data-en="SITE PLAN">总平面图</b><small>TO BE ADDED</small></div>
-        <div class="drawing-slot reveal"><span>02</span><b data-zh="建筑平面" data-en="FLOOR PLANS">建筑平面</b><small>TO BE ADDED</small></div>
-        <div class="drawing-slot reveal"><span>03</span><b data-zh="立面 / 剖面" data-en="ELEVATIONS / SECTIONS">立面 / 剖面</b><small>TO BE ADDED</small></div>
+
+      <article class="drawing-feature reveal">
+        <button class="image-open drawing-media" type="button" data-image="assets/images/11-exploded-axon.jpg" data-caption-zh="爆炸轴测图｜街巷肌理中的公共空间序列" data-caption-en="Exploded axonometric | A sequence of public spaces within the lane fabric">
+          <img src="assets/images/11-exploded-axon.jpg" alt="项目爆炸轴测图" loading="lazy">
+        </button>
+        <div class="drawing-caption"><span>09</span><h3 data-zh="爆炸轴测图" data-en="EXPLODED AXONOMETRIC">爆炸轴测图</h3><p data-zh="保留 · 插入 · 连结" data-en="RETAIN · INSERT · CONNECT">保留 · 插入 · 连结</p></div>
+      </article>
+
+      <div class="drawing-chapter reveal"><span>PLAN STUDIES / 01</span><h3 data-zh="平面 · 院落作为空间核心" data-en="PLAN · THE COURTYARD AS A SPATIAL CORE">平面 · 院落作为空间核心</h3></div>
+      <div class="plan-grid">
+        <article class="drawing-card reveal">
+          <button class="image-open plan-media" type="button" data-view="plan" data-image="assets/images/12-site-plan.jpg" data-caption-zh="总平面图｜屋面、棚架与院落系统" data-caption-en="Site plan | Roofs, canopies and courtyard system">
+            <img src="assets/images/12-site-plan.jpg" alt="项目总平面图" loading="lazy">
+          </button>
+          <div class="drawing-caption"><span>10</span><h3 data-zh="总平面图" data-en="SITE PLAN">总平面图</h3><p>ROOF + COURTYARD</p></div>
+        </article>
+        <article class="drawing-card reveal">
+          <button class="image-open plan-media" type="button" data-view="plan" data-image="assets/images/13-ground-floor.jpg" data-caption-zh="一层平面图｜公共活动围绕中心院落展开" data-caption-en="Ground floor plan | Public life unfolds around the central court">
+            <img src="assets/images/13-ground-floor.jpg" alt="建筑一层平面图" loading="lazy">
+          </button>
+          <div class="drawing-caption"><span>11</span><h3 data-zh="一层平面图" data-en="GROUND FLOOR PLAN">一层平面图</h3><p>GROUND + COURT</p></div>
+        </article>
+        <article class="drawing-card reveal">
+          <button class="image-open plan-media" type="button" data-view="plan" data-image="assets/images/14-upper-floor.jpg" data-caption-zh="二层平面图｜廊道串联屋顶层公共空间" data-caption-en="Upper floor plan | Passages connect the public spaces above">
+            <img src="assets/images/14-upper-floor.jpg" alt="建筑二层平面图" loading="lazy">
+          </button>
+          <div class="drawing-caption"><span>12</span><h3 data-zh="二层平面图" data-en="UPPER FLOOR PLAN">二层平面图</h3><p>PASSAGE + ROOF</p></div>
+        </article>
+      </div>
+
+      <div class="drawing-chapter reveal"><span>SECTION STUDIES / 02</span><h3 data-zh="剖面 · 新旧结构的连续界面" data-en="SECTION · A CONTINUOUS EDGE BETWEEN OLD AND NEW">剖面 · 新旧结构的连续界面</h3></div>
+      <div class="section-drawings">
+        <article class="section-drawing reveal">
+          <button class="image-open section-media" type="button" data-image="assets/images/15-section-north-south.jpg" data-caption-zh="南北剖立面｜剧场、游客中心与保留建筑的空间关系" data-caption-en="North–south section elevation | Theatre, visitor centre and retained fabric">
+            <img src="assets/images/15-section-north-south.jpg" alt="建筑南北剖立面" loading="lazy">
+          </button>
+          <div class="drawing-caption"><span>13</span><h3 data-zh="南北剖立面" data-en="NORTH–SOUTH SECTION ELEVATION">南北剖立面</h3><p>N — S</p></div>
+        </article>
+        <article class="section-drawing reveal">
+          <button class="image-open section-media" type="button" data-image="assets/images/16-section-east-west.jpg" data-caption-zh="东西剖立面｜庭院、开放剧场与绿地的层次" data-caption-en="East–west section elevation | Courtyard, open theatre and landscape layers">
+            <img src="assets/images/16-section-east-west.jpg" alt="建筑东西剖立面" loading="lazy">
+          </button>
+          <div class="drawing-caption"><span>14</span><h3 data-zh="东西剖立面" data-en="EAST–WEST SECTION ELEVATION">东西剖立面</h3><p>W — E</p></div>
+        </article>
+        <article class="section-drawing section-focus reveal">
+          <button class="image-open section-media focus" type="button" data-image="assets/images/17-long-section-east-west.jpg" data-caption-zh="东西向横剖面｜页面聚焦展示建筑主体，点击查看完整场地关系" data-caption-en="Long east–west section | The page focuses on the building; select to see the full context">
+            <img src="assets/images/17-long-section-east-west.jpg" alt="东西向长横剖面" loading="lazy">
+          </button>
+          <div class="drawing-caption"><span>15</span><h3 data-zh="东西向横剖面" data-en="LONG EAST–WEST SECTION">东西向横剖面</h3><p data-zh="聚焦视图 · 点击查看完整图" data-en="FOCUS VIEW · SELECT FOR FULL DRAWING">聚焦视图 · 点击查看完整图</p></div>
+        </article>
       </div>
     </section>
 

@@ -50,6 +50,7 @@ document.querySelectorAll('.image-open').forEach((button) => {
     lightboxImage.src = button.dataset.image;
     lightboxImage.alt = button.querySelector('img')?.alt || '';
     lightboxCaption.textContent = button.dataset[language === 'zh' ? 'captionZh' : 'captionEn'];
+    lightbox.classList.toggle('plan-view', button.dataset.view === 'plan');
     lightbox.showModal();
     document.body.classList.add('locked');
   });
@@ -59,6 +60,7 @@ function closeLightbox() {
   lightbox.close();
   document.body.classList.remove('locked');
   lightboxImage.src = '';
+  lightbox.classList.remove('plan-view');
 }
 
 document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
